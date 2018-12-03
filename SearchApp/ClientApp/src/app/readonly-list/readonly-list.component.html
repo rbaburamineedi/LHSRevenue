@@ -1,0 +1,14 @@
+<table class='table' *ngIf="slots">
+  <thead>
+    <tr>
+      <th>Slot Date</th>
+      <th>Slot Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let slot of slots">
+      <td>{{ slot.slotStartTime | date:'h:mma' }}</td>
+      <td>{{ slot.slotDescription }}</td>
+    </tr>
+  </tbody>
+</table>

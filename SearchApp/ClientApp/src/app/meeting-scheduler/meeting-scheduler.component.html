@@ -1,0 +1,9 @@
+<h1>Meeting Scheduler</h1>
+
+<p *ngIf="!slots"><em>Loading...</em></p>
+<div class="row">
+  <input class="col-sm-6" type="text" [(ngModel)]="slot.slotDescription" />
+  <button class="col-sm-2" (click)="createMeeting()">Create</button>
+</div>
+<br /> <br />
+<app-readonly-list [slots]="slots"></app-readonly-list>

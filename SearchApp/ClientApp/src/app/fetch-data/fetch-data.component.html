@@ -1,0 +1,14 @@
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+<p *ngIf="!slots"><em>Loading...</em></p>
+
+<div>
+  <input type="text" [(ngModel)]="slot.date" />
+  <input type="text" [(ngModel)]="slot.time" />
+  <input type="text" [(ngModel)]="slot.description" />
+  <button (click)="insert()">Insert</button>
+  <button (click)="fetch()">Fetch</button>
+</div>
+<br /> <br />
